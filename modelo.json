@@ -1,0 +1,29 @@
+{
+    "endpoints": {
+      "predict": {
+        "method": "POST",
+        "path": "/predict",
+        "description": "Endpoint para fazer previsões",
+        "request_body": {
+          "format": "JSON",
+          "example": {
+            "feature1": 10.5,
+            "feature2": 20.0,
+            "feature3": 5.0
+          }
+        },
+        "response": {
+          "format": "JSON",
+          "example": {
+            "prediction": 120.0
+          }
+        }
+      },
+      "health": {
+        "method": "GET",
+        "path": "/health",
+        "description": "Verifica a saúde do serviço"
+      }
+    }
+  }
+  
